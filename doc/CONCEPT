@@ -1,0 +1,13 @@
+6 stats
+
+strength - max melee damage, strength saving throws
+endurance - max health, endurance saving throws
+agility - chance to dodge, agility saving throws
+intelligence - max magic, spell damage, int saving throws
+wisdom - magic regeneration rate per turn, spell damage, wis saving throws
+luck - small impact on everything
+
+2 ""bars""
+
+health - beigns at 10
+magic - begins at 0, unless player is magic-sensitive
