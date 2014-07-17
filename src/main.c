@@ -28,7 +28,6 @@ int main(){
 	printf("From there your health defaults to %d\n", HEALTH);
 	printf("But your magic remains at %d most of the time.\n\nWell, mostly. Are you magic sensitive? ", MAGIC);
 
-
 	scanf("%d", &inputMagic); /* Take input from player, to determine if they like mages */
 
 	if (inputMagic == 0) {
