@@ -9,7 +9,7 @@ int playerState[1][8];
 
 int main(){
 
-    int sensitiveCheck, playerSensitive, x;
+    int sensitiveCheck, playerSensitive, inputMagic;
 
 	playerState[0][0];
 	playerState[0][1];
@@ -26,14 +26,17 @@ int main(){
 	HEALTH = 10;
 
 	printf("From there your health defaults to %d\n", HEALTH);
-	printf("But your magic remains at %d most of the time.\n\nWell, mostly. Are you magic sensitive? \n", MAGIC);
+	printf("But your magic remains at %d most of the time.\n\nWell, mostly. Are you magic sensitive? ", MAGIC);
 
-	if (( sensitiveCheck = scanf("%d", &x)) == 0) {
-	    printf("Nope, %d !\n");
-	    playerSensitive = 0; }
-	else if (( sensitiveCheck = scanf("%d", &x)) == 1) {
-	    printf("Yup, %d !\n");
-	    playerSensitive = 1; }
+
+	scanf("%d", &inputMagic);
+
+	if (inputMagic == 0) {
+	    playerSensitive = 0;
+	    printf("You are not sensitive.\n");}
+	else if (inputMagic == 1) {
+	    playerSensitive = 1;
+	    printf("You are magic sensitive!\n");}
 	else {
 	    printf("Please enter 0 if you are not magic sensitive, or 1 if you are.\n");}
 
