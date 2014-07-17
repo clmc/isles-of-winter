@@ -31,7 +31,7 @@ int main(){
 	if (( sensitiveCheck = scanf("%d", &x)) == 0) {
 	    printf("Nope, %d !\n");
 	    playerSensitive = 0; }
-	if (( sensitiveCheck = scanf("%d", &x)) == 1) {
+	else if (( sensitiveCheck = scanf("%d", &x)) == 1) {
 	    printf("Yup, %d !\n");
 	    playerSensitive = 1; }
 	else {
