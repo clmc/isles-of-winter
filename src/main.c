@@ -9,7 +9,8 @@ int playerState[1][8];
 
 int main(){
 
-    int playerSensitive, inputMagic;
+    int inputMagic;
+    char playerSensitive;
 
 	playerState[0][0];
 	playerState[0][1];
@@ -30,10 +31,10 @@ int main(){
 
 	scanf("%d", &inputMagic); /* Take input from player, to determine if they like mages */
 
-	if (inputMagic == 0) {
+	if (inputMagic == "n") {
 	    playerSensitive = 0;
 	    printf("You are not sensitive.\n");}
-	else if (inputMagic == 1) {
+	else if (inputMagic == "y") {
 	    playerSensitive = 1;
 	    printf("You are magic sensitive!\n");}
 	else {
