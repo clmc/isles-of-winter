@@ -6,31 +6,23 @@
 
 int playerState[1][8];
 
-
 int main(){
 
-    int i, playerSensitive, inputMagic;
-    int c = fgetc(stdin);
-    
-    if (c != 'y' || c != 'n')
-	fprintf(stderr, "Nice try.\n");
+	printf("Your health begins at %d\n", HEALTH);
+	printf("Your magic begins at %d\n", MAGIC);
 
-//	printf("Your health begins at %d\n", HEALTH);
-//	printf("Your magic begins at %d\n", MAGIC);
-//
-//	HEALTH = 10; /* Initialize health */
-//
-//	printf("From there your health defaults to %d\n", HEALTH);
-//	printf("But your magic remains at %d most of the time.\n\nWell, mostly. Are you magic sensitive? ", MAGIC);
+	HEALTH = 10; /* Initialize health */
 
-//	scanf("%d", &playerSensitive); /* Take input from player, to determine if they like mages */
+	printf("From there your health defaults to %d\n", HEALTH);
+	printf("But your magic remains at %d most of the time.\n\nWell, mostly. Are you magic sensitive? ", MAGIC);
 
-//	if (playerSensitive == 0) {
-//	    printf("You are not sensitive.\n");}
-//	else if (playerSensitive == 1) {
-//	    printf("You are magic sensitive!\n");}
-//	else {
-//	    printf("Please enter 0 if you are not magic sensitive, or 1 if you are.\n");}
+	char startMage = fgetc(stdin);
+	if (startMage != 'y' && startMage != 'n')
+	    fprintf(stderr, "No, seriously, do you want to be a mage or not?\n");
+	else if (startMage = 'y')
+	    MAGIC = 5;
+
+	printf("So, your magic is now %d.\n", MAGIC);
 
 return 0;
 }
