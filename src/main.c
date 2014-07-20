@@ -19,7 +19,7 @@ int main(){
 	char startMage = fgetc(stdin);
 	if (startMage != 'y' && startMage != 'n')
 	    fprintf(stderr, "No, seriously, do you want to be a mage or not?\n");
-	else if (startMage = 'y')
+	else if (startMage == 'y')
 	    MAGIC = 5;
 
 	printf("So, your magic is now %d.\n", MAGIC);
