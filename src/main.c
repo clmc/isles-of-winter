@@ -12,7 +12,6 @@
 #define LUCK      playerState[0][7]
 
 /* Initial questions asked to character */
-
 #define QUESTION_1 playerQuestions[0][0]
 #define QUESTION_2 playerQuestions[0][1]
 #define QUESTION_3 playerQuestions[0][2]
@@ -39,7 +38,7 @@ int main(){
 
 	printf("\n\n\n\nNow, I'm going to ask you a series of questions before you enter the isles.\n\nYou enter a marketplace, and witness a thief cutting a purse from a noble. What do you do?\n");
 
-	QUESTION_1 = fgetc(stdin);
+	QUESTION_1 = fgetc(stdin); 	/* Ask first question to determine stats */
 	if (QUESTION_1 != 1 && QUESTION_1 != 2 && QUESTION_1 != 3)
 	    fprintf(stderr, "Please choose an option.\n");
 	else 
