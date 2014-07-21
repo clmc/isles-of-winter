@@ -39,7 +39,7 @@ int main(){
 
 	printf("\n\n\n\nNow, I'm going to ask you a series of questions before you enter the isles.\n\nYou enter a marketplace, and witness a thief cutting a purse from a noble. What do you do?\n");
 
-	int QUESTION_1 = fgetc(stdin);
+	QUESTION_1 = fgetc(stdin);
 	if (QUESTION_1 != 1 && QUESTION_1 != 2 && QUESTION_1 != 3)
 	    fprintf(stderr, "Please choose an option.\n");
 	else if (QUESTION_1 = 1)
