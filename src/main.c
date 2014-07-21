@@ -11,7 +11,16 @@
 #define WISDOM    playerState[0][6]
 #define LUCK      playerState[0][7]
 
+/* Initial questions asked to character */
+
+#define QUESTION_1 playerQuestions[0][0]
+#define QUESTION_2 playerQuestions[0][1]
+#define QUESTION_3 playerQuestions[0][2]
+#define QUESTION_4 playerQuestions[0][3]
+#define QUESTION_5 playerQuestions[0][4]
+
 int playerState[1][8];
+int playerQuestions[1][5];
 
 int main(){
 
@@ -28,6 +37,17 @@ int main(){
 	else if (startMage == 'y')
 	    MAGIC = 5, STRENGTH = 1, AGILITY = 1, INTEL = 4;
 
-	printf("\nSo, your stats are:\nStr: %d\nEnd: %d\nAgi: %d\nInt: %d\nWis: %d\nLck: %d\n", STRENGTH, ENDURANCE, AGILITY, INTEL, WISDOM, LUCK);
+	printf("\n\n\n\nNow, I'm going to ask you a series of questions before you enter the isles.\n\nYou enter a marketplace, and witness a thief cutting a purse from a noble. What do you do?\n");
+
+	int QUESTION_1 = fgetc(stdin);
+	if (QUESTION_1 != 1 && QUESTION_1 != 2 && QUESTION_1 != 3)
+	    fprintf(stderr, "Please choose an option.\n");
+	else if (QUESTION_1 = 1)
+	    printf("You entered %d\n", QUESTION_1);
+	else if (QUESTION_1 = 2)
+	    printf("You entered %d\n", QUESTION_1);
+	else if (QUESTION_1 = 3)
+	    printf("You entered %d\n", QUESTION_1);
+
 return 0;
 }
