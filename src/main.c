@@ -42,11 +42,7 @@ int main(){
 	QUESTION_1 = fgetc(stdin);
 	if (QUESTION_1 != 1 && QUESTION_1 != 2 && QUESTION_1 != 3)
 	    fprintf(stderr, "Please choose an option.\n");
-	else if (QUESTION_1 = 1)
-	    printf("You entered %d\n", QUESTION_1);
-	else if (QUESTION_1 = 2)
-	    printf("You entered %d\n", QUESTION_1);
-	else if (QUESTION_1 = 3)
+	else 
 	    printf("You entered %d\n", QUESTION_1);
 
 return 0;
